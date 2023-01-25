@@ -11,6 +11,6 @@ COPY . /app
 EXPOSE 80
 
 #This is anonymous volume
-VOLUME [ "/temp" ]
+VOLUME [ "/logs" ]
 
 CMD ["node", "server.js"]
