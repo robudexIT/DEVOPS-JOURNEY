@@ -13,4 +13,4 @@ EXPOSE 80
 #This is anonymous volume
 VOLUME [ "/logs" ]
 
-CMD ["node", "server.js"]
+CMD ["npm", "start"]
