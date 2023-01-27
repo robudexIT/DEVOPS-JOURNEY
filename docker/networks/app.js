@@ -18,9 +18,10 @@ app.get('/favorites', async (req, res) => {
 });
 
 app.post('/favorites', async (req, res) => {
-  const favName = req.body.name;
-  const favType = req.body.type;
-  const favUrl = req.body.url;
+  const favName = req.body.favName;
+  const favType = req.body.favType;
+  const favUrl = req.body.favUrl;
+  
 
   try {
     if (favType !== 'movie' && favType !== 'character') {
