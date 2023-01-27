@@ -13,4 +13,4 @@ ARG DEFAULT_DB mongodb
 ENV DB $DEFAULT_DB
 ENV BACKENDPORT 80
 
-CMD ["npm run", "dev"]
+CMD ["npm", "dev"]
