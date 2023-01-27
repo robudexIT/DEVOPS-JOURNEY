@@ -10,6 +10,9 @@ const Goal = require('./models/goal');
 
 const app = express();
 const mongodb = process.env.DB
+const dbuser = process.env.DB_USER
+const dbpassword = process.env.DB_PASSWORD
+const PORT = process.env.BACKENDPORT
 
 const accessLogStream = fs.createWriteStream(
   path.join(__dirname, 'logs', 'access.log'),
@@ -85,7 +88,7 @@ app.delete('/goals/:id', async (req, res) => {
 });
 
 mongoose.connect(
-  `mongodb://${mongodb}:27017/course-goals`,
+  `mongodb://${dbuser}:${dbpassword}@${mongodb}:27017/course-goals`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -96,7 +99,7 @@ mongoose.connect(
       console.error(err);
     } else {
       console.log('CONNECTED TO MONGODB');
-      app.listen(80);
+      app.listen(PORT);
     }
   }
 );
