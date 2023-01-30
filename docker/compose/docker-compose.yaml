@@ -3,7 +3,7 @@ services:
   mongodb:
     image: mongo
     volumes:
-      - data:/db/data
+      - data:/data/db
     env_file:
       - ./env/mongo.env
   backend:
