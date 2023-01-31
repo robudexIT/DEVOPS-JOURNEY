@@ -4,9 +4,8 @@ services:
   npm:
     build: ./
     volumes:
-      - ./utility-containers:/app
+      - ./:/app
     stdin_open: true
     tty: true
 
-  
-    
+
