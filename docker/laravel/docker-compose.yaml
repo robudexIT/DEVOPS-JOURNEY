@@ -7,9 +7,9 @@ services:
      volumes:
        - ./nginx.conf:/etc/nginx/conf.d/default.conf
        - ./src:/var/www/html
-     depends_on:
-       - php
-       - mysqldb
+    #  depends_on:
+    #    - php
+    #    - mysqldb
        
   php:
     build: 
