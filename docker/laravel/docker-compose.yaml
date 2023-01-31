@@ -33,5 +33,5 @@ services:
   # npm:
   # artisan:
 
-# volumes:
-#   - data:
+volumes:
+  - data:
