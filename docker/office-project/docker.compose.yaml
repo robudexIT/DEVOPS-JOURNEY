@@ -1,0 +1,9 @@
+verson: "3.8"
+services:
+  mariadb:
+    image: mariadb
+    env_file:
+      - ./env/db.env
+    volumes:
+      - ./database:/var/lib/mysql
+      
