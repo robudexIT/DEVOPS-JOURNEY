@@ -6,4 +6,6 @@ services:
       - ./env/db.env
     volumes:
       - ./database:/var/lib/mysql
+    ports:
+      3307:3306
       
