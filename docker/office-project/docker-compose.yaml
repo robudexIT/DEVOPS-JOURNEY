@@ -6,6 +6,9 @@ services:
       - ./env/db.env
     volumes:
       - ./database:/var/lib/mysql
+  dbadmin:
+    image: phpmyadmin
     ports:
-      - 3307:3306
-      
+      - 8080:80
+    env_file:
+      - ./env/admin.env
