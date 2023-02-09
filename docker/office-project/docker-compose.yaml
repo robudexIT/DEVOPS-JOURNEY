@@ -5,11 +5,14 @@ services:
     env_file:
       - ./env/db.env
     volumes:
-      - ./database:/var/lib/mysql
-    pro
+      - sbtphdb:/var/lib/mysql
+    ports:
+      - 3307:3306
   dbadmin:
     image: phpmyadmin
     ports:
       - 8080:80
     env_file:
       - ./env/admin.env
+ports:
+  sbtphdb:
