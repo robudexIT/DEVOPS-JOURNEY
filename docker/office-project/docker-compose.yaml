@@ -6,6 +6,7 @@ services:
       - ./env/db.env
     volumes:
       - ./database:/var/lib/mysql
+    pro
   dbadmin:
     image: phpmyadmin
     ports:
