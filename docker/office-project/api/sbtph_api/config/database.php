@@ -1,14 +1,17 @@
 <?php
-
+$h = $_ENV["DB_HOST"];
+$d = $_ENV['DB_NAME'] ;
+$u = $_ENV['DB_USER'];
+$p = $_ENV['DB_PASSWORD'];
 class Database{
 
     //database properties
 
-    private $host = "192.168.70.250";
-    private $dbname = "sbtphcsd2";
+    private $host =  "mariadb";
+    private $dbname = "sbtphcsd";
     // private $dbname = "restore_data";
-    private $username = "python";
-    private $password = "sbtph@2018";
+    private $username = "python" ; //"python";
+    private $password = "sbtph@2018"; //"sbtph@2018";
 
  
     private $db;
