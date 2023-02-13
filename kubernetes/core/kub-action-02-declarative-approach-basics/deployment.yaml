@@ -4,10 +4,10 @@ metadata:
   name: second-app-deployment
 spec:
   replicas: 1
-  # selector:
-  #   matchLabels:
-  #     app: second-app
-  #     tier: backend
+  selector:
+    matchLabels:
+      app: second-app
+      tier: backend
   template:
     metadata: 
       labels:
