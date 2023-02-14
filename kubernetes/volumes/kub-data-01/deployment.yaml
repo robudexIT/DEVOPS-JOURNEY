@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: deployment
+kind: Deployment
 metadata: 
   name: kub-volume
 
@@ -14,9 +14,9 @@ spec:
       labels: 
         app: story
         tier: apibackend
-    specs:
+    spec:
       containers:
         - name: storynode
-          image: robudex17/storyapi
+          image: robudex17/storyapi:v1
           
 
