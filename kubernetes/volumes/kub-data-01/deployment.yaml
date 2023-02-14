@@ -18,6 +18,9 @@ spec:
       containers:
         - name: storynode
           image: robudex17/storyapi:v1
-      type: LoadBalancer    
+      
+      
+
+
           
 
