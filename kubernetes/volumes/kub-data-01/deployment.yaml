@@ -19,8 +19,8 @@ spec:
         - name: storynode
           image: robudex17/storyapi:v1
           volumeMounts:
-            name: story-volume
-            mountPath: /app/story
+            - name: story-volume
+              mountPath: /app/story
       volumes:
         - name: story-volume
           emptyDir: {}
