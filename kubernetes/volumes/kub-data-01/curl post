@@ -1,1 +1,1 @@
- curl -X POST -H "Content-Type: application/json" -d '{"text":"value1"}' http://192.168.49.2:30312/story
+ curl -X POST -H "Content-Type: application/json" -d '{"text":"another value1"}' http://192.168.49.2:30312/story
