@@ -7,33 +7,31 @@ spec:
     app: second-app
   ports:
     - protocol: 'TCP'
-      port: 8081
+      port: 80
       targetPort: 8080
     # - protocol: 'TCP'
     #   port: 443
     #   targetPort: 443
   type: LoadBalancer
-
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: merge-deployment
+  name: second-app-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rogapp
+      app: second-app
       tier: backend
   template:
     metadata: 
       labels:
-        app: rogapp
+        app: second-app
         tier: backend
     spec: 
       containers:
-        - name: nodeapp
-          image: robudex17/rognodeap:v3
+        - name: second-node
+          image: academind/kub-first-app:2
         # - name: ...
         #   image: ...
-
