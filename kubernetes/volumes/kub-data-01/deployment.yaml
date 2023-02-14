@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: storynode
-          image: robudex17/storyapi:v1
+          image: robudex17/storyapi:2
           volumeMounts:
             - name: story-volume
               mountPath: /app/story
@@ -26,10 +26,8 @@ spec:
         # - name: story-volume
         #   emptyDir: {}
         - name: story-volume
-          hostPath: 
-            path: /data
-            type: DirectoryOrCreate
-      
+          PersistentVolumeClaim:
+            claimName: pv-data-claim
 
 
           
