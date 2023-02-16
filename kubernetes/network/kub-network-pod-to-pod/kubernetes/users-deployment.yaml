@@ -18,5 +18,4 @@ spec:
           env:
             - name: AUTH_ADDRES
               value: localhost
-        - name: auth
-          image: robudex17/auth_api:latest
+      

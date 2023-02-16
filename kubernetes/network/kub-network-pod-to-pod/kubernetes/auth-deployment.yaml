@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-deployment
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: auth
+  template:
+    labels: 
+      app: auth
+    spec:
+      containers: 
+        - name: auth
+          image: robudex17/auth_api:latest 
