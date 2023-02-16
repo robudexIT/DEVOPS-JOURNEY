@@ -1,4 +1,4 @@
                                                       curl post                                                                
- curl -X POST -H "Content-Type: application/json" -d '{"email":"rogmer.bulaclac@gmail.com", "password": "password"}' http://192.168.49.2:30312/signup
-  curl -X POST -H "Content-Type: application/json" -d '{"email":"rogmer.bulaclac@gmail.com", "password": "password"}' http://192.168.49.2:30312/login
+ curl -X POST -H "Content-Type: application/json" -d '{"email":"rogmer.bulaclac@gmail.com", "password": "password"}' http://192.168.49.2:30772/signup
+  curl -X POST -H "Content-Type: application/json" -d '{"email":"rogmer.bulaclac@gmail.com", "password": "password"}' http://192.168.49.2:30772/login
 curl  http://192.168.49.2:30312/
