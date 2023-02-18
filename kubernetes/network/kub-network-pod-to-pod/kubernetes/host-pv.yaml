@@ -6,9 +6,9 @@ spec:
   capacity:
     storage: 2Gi
   volumeMode: Filesystem
-  storeClassName: standard 
+  storageClassName: standard 
   accessModes: 
     - ReadWriteOnce
-    hostPath:
-      path: /data 
-      type: DirectoryOrCreate  
+  hostPath:
+    path: /data 
+    type: DirectoryOrCreate  
