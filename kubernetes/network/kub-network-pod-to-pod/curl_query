@@ -1,4 +1,10 @@
                                                       curl post                                                                
- curl -X POST -H "Content-Type: application/json" -d '{"email":"rogmer.bulaclac@gmail.com", "password": "password"}' http://192.168.49.2:30772/signup
-  curl -X POST -H "Content-Type: application/json" -d '{"email":"rogmer.bulaclac@gmail.com", "password": "password"}' http://192.168.49.2:30772/login
+ curl -X POST -H "Content-Type: application/json" -d '{"email":"rogmer.bulaclac@gmail.com", "password": "password"}' http://192.168.49.2:32745/signup
+  curl -X POST -H "Content-Type: application/json" -d '{"email":"rogmer.bulaclac@gmail.com", "password": "password"}' http://192.168.49.2:32745/login
 curl  http://192.168.49.2:30312/
+
+# task
+curl -X POST  -H "Authorization: Bearer abc" -H "Content-Type: application/json" -d '{"title":"Learn kubernetes", "On going": ""}' http://192.168.49.2:32474/tasks
+
+
+curl -H "Authorization: Bearer abc" http://192.168.49.2:32474/tasks
