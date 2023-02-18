@@ -25,5 +25,5 @@ spec:
               name: tasks-volume   
       volumes: 
         - name: tasks-volume 
-          PersistentVolumeClaim:
+          persistentVolumeClaim:
             claimName: host-pvc  

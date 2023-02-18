@@ -7,7 +7,6 @@ spec:
     app: tasks 
   type: NodePort
   ports: 
-    - procotol: TCP
+    - protocol: TCP
       port: 8000
       targetPort: 8000
-      
