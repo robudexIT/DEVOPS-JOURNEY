@@ -16,7 +16,7 @@ spec:
         - name: users
           image: robudex17/users_api:latest
           env:
-            - name: AUTH_ADDRES
+            - name: AUTH_ADDRESS
               # this value is the dns of auth-service support by kubernetes
               value: auth-service.default 
       
