@@ -71,3 +71,5 @@ sudo kubeadm join <join command from previous command>
 
 9. In the Control Plane Node, view cluster status (Note: You may have to wait a few moments to allow the cluster to become ready):
 kubectl get nodes
+
+
